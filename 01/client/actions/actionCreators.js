@@ -2,7 +2,7 @@
 
 export function increment(index) {
   return {
-    type: 'INCREMETN_LINKS',
+    type: 'INCREMENT_LINKS',
     index: index
   }
 }
