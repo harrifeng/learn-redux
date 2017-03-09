@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import { Link } from 'react-router';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 
@@ -11,7 +11,7 @@ const Photo = React.createClass({
         <div className="grid-photo-wrap">
           <Link to={`/views/${post.code}`}>
             <img src={post.display_src} alt={post.caption}
-                 className="frid-photo" />
+                 className="grid-photo" />
           </Link>
         </div>
         <figcaption>
