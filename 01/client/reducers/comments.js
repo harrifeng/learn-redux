@@ -1,8 +1,12 @@
 function comments(state = [], action) {
-  console.log("comments also?");
-  console.log(state, action);
 
-  return state;
+  switch(action.type) {
+    case 'INCREMENT_LINKS' :
+      console.log('increment');
+
+    default:
+      return state;
+  }
 }
 
 export default comments;
