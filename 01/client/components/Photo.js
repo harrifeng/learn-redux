@@ -16,6 +16,16 @@ const Photo = React.createClass({
         </div>
         <figcaption>
           <p>{post.caption}</p>
+          <div className="control-buttons">
+            <button className="likes">&hearts; {post.likes}
+            </button>
+            <Link className="button" to={`/views/${post.code}`}>
+              <span className="comment-count">
+                <span className="speech-bubble"></span>
+                {comments[post.code] ? comments[post.code].length : 0}
+              </span>
+            </Link>
+          </div>
         </figcaption>
       </figure>
     )
