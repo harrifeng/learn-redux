@@ -3,7 +3,7 @@ import React from 'react';
 const Single = React.createClass({
   render() {
     return (
-      <div className="signle-photo">
+      <div className="single-photo">
         I'm single-photo
       </div>
     )
