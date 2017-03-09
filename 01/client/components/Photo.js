@@ -14,6 +14,9 @@ const Photo = React.createClass({
                  className="frid-photo" />
           </Link>
         </div>
+        <figcaption>
+          <p>{post.caption}</p>
+        </figcaption>
       </figure>
     )
   }
