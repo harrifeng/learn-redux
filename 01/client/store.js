@@ -13,7 +13,7 @@ import posts from './data/posts';
 const defaultState = {
   posts,
   comments
-}
+};
 
 const enhancers = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
@@ -22,7 +22,7 @@ const enhancers = compose(
 
 const store = createStore(rootReducer, defaultState, enhancers);
 
-export const history = syncHistoryWithStore(browserHistory, store)
+export const history = syncHistoryWithStore(browserHistory, store);
 
 if (module.hot) {
   module.hot.accept('./reducers/', () => {

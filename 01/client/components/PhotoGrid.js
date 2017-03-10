@@ -9,6 +9,6 @@ const PhotoGrid = React.createClass({
       </div>
     )
   }
-})
+});
 
 export default PhotoGrid;

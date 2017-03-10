@@ -17,6 +17,6 @@ const Single = React.createClass({
       </div>
     )
   }
-})
+});
 
 export default Single;
