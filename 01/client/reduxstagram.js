@@ -1,19 +1,16 @@
 // let's go!
 import React from 'react';
 
-import { render } from 'react-dom';
+import {render} from 'react-dom';
 import App from './components/App';
-
-import css from './styles/style.styl';
 
 
 import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
-
 //import react router deps
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import { Provider } from 'react-redux';
-import store, { history } from './store';
+import {IndexRoute, Route, Router} from 'react-router';
+import {Provider} from 'react-redux';
+import store, {history} from './store';
 
 const router = (
   <Provider store={store}>
@@ -28,4 +25,4 @@ const router = (
 
 )
 render(router,
-       document.getElementById('root'));
+  document.getElementById('root'));
